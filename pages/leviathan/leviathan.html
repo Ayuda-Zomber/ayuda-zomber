@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+
+
+  <title>Leviathan</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Leviathan</h1>
+    <h2 class="title">Steam Workshop ID: 2112576356 </h2>
+    <div class="options">
+      <div class="column">
+        <button class="option-button" id="pap/pap">Pack-A-Punch</button>
+        <br>
+        <button class="option-button" id="arpon/arpon">Mejorar Arpón</button>
+        <br>
+        <button class="option-button" id="escudo/escudo">Escudo</button>
+        <br>
+        <button class="option-button" id="poseidon/poseidon">Tridente de Poseidón</button>
+        <br>
+
+      </div>
+      <div class="column">     
+        <button class="option-button" id="puños/puños">Puños</button>
+        <br>
+        <button class="option-button" id="code/code">Todos los códigos</button>
+        <br>
+        <button class="option-button" id="miniee/miniee">Mini Easter Eggss</button>
+        <br>
+        <button class="option-button" id="ee/ee">Easter Egg</button>
+        <br>
+      </div>
+    </div>
+    <br> <br><br>
+    <button onclick="resetImage()" class="reset-button">Restablecer Mapa</button>
+    <div class="zoom-container" id="zoomContainer">
+      <img src="map.png" width="1280" height="720" class="zoom-image" id="zoomImage">
+    </div>
+    <br><br>
+    <div class="functions inactive" id="functionsContainer">
+      <!-- Las funciones de las opciones se cargarán aquí dinámicamente -->
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+  
+  <a href="../../workshop/workshop.html">
+    <img src="../../workshop/workshop.png" alt="Ayuda" class="ws-button" style="width: 28px; height: 28px;">
+  </a>
+</body>
+</html>
