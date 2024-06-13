@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+
+
+  <title>Shadows of Evil</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Shadows of Evil</h1>
+    <div class="options">
+      <div class="column">
+        <button class="option-button" id="escudo">Escudo Cohete</button>
+        <button class="option-button" id="packapunch">Pack-A-Punch</button>
+        <button class="option-button" id="Protector">Protector Civil</button>
+        <button class="option-button" id="arma">Siervo de Apoticón</button>
+      </div>
+      <div class="column">
+        <button class="option-button" id="espada">Espada</button>
+        <button class="option-button" id="mejora">Mejorar Espada</button>        
+        <button class="option-button" id="miniee/mini_ee">Mini Easter Eggs</button>
+        <button class="option-button" id="shadows_menu">Easter Egg</button>
+
+        <br>
+      </div>
+    
+    </div>
+    <br> <br><br>
+    <button onclick="resetImage()" class="reset-button">Restablecer Mapa</button>
+    <div class="zoom-container" id="zoomContainer">
+      <img src="map.png" width="1280" height="720" class="zoom-image" id="zoomImage">
+    </div>
+    <br><br>
+    <div class="functions inactive" id="functionsContainer">
+      <!-- Las funciones de las opciones se cargarán aquí dinámicamente -->
+    </div>
+  </div>
+  <script src="/script.js"></script>
+  
+</body>
+</html>
