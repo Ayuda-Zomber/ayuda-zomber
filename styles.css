@@ -1,0 +1,413 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('/art/wallpaper.jpg');
+  background-size: cover;
+  background-position: top;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Borde negro */
+  margin: 10%;
+  padding: 0;
+  background-attachment: fixed; /* Fondo de pantalla fijo */
+}
+.ws-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+a {
+  color: rgb(255, 136, 0); /* Color del enlace normal */
+  text-decoration: none; /* Sin subrayado */
+}
+
+a:visited {
+  color: rgb(255, 136, 0); /* Color del enlace visitado */
+}
+
+a:hover {
+  color: rgb(255, 164, 60); /* Color del enlace al pasar el ratón */
+}
+
+a:active {
+  color: rgb(255, 164, 60); /* Color del enlace activo (al hacer clic) */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para los iconos */
+.corner-icon {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+}
+
+.left {
+  top: 0;
+  left: 0;
+}
+
+.right {
+  top: 0;
+  right: 0;
+}
+
+hr {
+  width: 100%; /* Ancho completo de la pantalla */
+  height: 2px; /* Altura de la línea */
+  background-color: #c7430f; /* Color naranja */
+  border: none; /* Eliminar borde predeterminado */
+  margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+/* Estilos para las imágenes de las estatuas */
+.statue-image {
+  width: 100px; /* Ajusta el ancho según sea necesario */
+  height: 100px; /* Ajusta la altura según sea necesario */
+  margin-bottom: 10px; /* Espacio entre las imágenes */
+  cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+  border: 2px solid transparent; /* Borde inicial transparente */
+  transition: border-color 0.3s ease; /* Transición suave para el cambio de color del borde */
+  display: block; /* Asegura que las imágenes sean bloques para centrarlas */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+/* Estilos para las imágenes de las estatuas cuando se interactúa */
+.statue-image:hover {
+  border-color: #c7430f; /* Cambia el color del borde a naranja cuando se pasa el mouse */
+}
+
+/* Estilos para la columna de imágenes seleccionadas */
+.selected-images-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra verticalmente las imágenes */
+  max-height: 330px; /* Altura máxima para la columna de imágenes seleccionadas */
+  overflow-y: flex; /* Agrega desplazamiento vertical si hay más de 3 imágenes */
+  margin-left: 20px; /* Espacio entre las dos columnas de imágenes */
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  margin-right: 5px; /* Espacio entre imágenes */
+}
+
+.title-with-image {
+  text-align: center; /* Centra los elementos horizontalmente */
+}
+
+.title-button-container {
+  display: inline-block; /* Para que ocupe solo el ancho necesario */
+  vertical-align: middle; /* Para alinear verticalmente con el texto */
+  margin: 0 auto;
+}
+
+.tool-description {
+  position: relative; /* Hacer que el contenedor sea posicionado */
+}
+
+.tool-description .option-button {
+  position: absolute;
+  right: 0; /* Ajusta el margen derecho */
+  top: -8px;
+}
+
+.title {
+  color: rgb(235, 87, 2); /* Texto blanco */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 50px; /* Agrega margen inferior */
+}
+
+.title-with-image img {
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.options {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.column {
+  flex: 1;
+  text-align: center; /* Centra horizontalmente el texto dentro de las columnas */
+}
+
+.option-button-container {
+  text-align: center; /* Centra el botón horizontalmente */
+}
+
+.option-button {
+  display: inline-block; /* Asegura que el botón se muestre en línea */
+  padding: 10px 20px;
+  background-color: #000000; /* Gris oscuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option-button:hover {
+  background-color: #c7430f; /* Gris medio */
+}
+
+/* Estilos de las imágenes */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos de las funciones */
+.function {
+  margin-top: 20px;
+  background-color: #fff; /* Blanco */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.subtitle {
+  color: white; /* Texto blanco */
+}
+
+.function-button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #000000; /* Gris medio */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.function-button:hover {
+  background-color: #000000; /* Gris claro */
+}
+
+/* Estilos para el slider */
+.slider {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: none; /* Oculta todas las diapositivas por defecto */
+  width: 100%;
+  text-align: center;
+}
+
+.slide.active {
+  display: block; /* Muestra la diapositiva activa */
+}
+
+.slide-image {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+  max-width: 600px; /* Máximo ancho permitido */
+  height: 350px; /* Altura fija */
+  object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto sin deformarla */
+}
+
+/* Botones de navegación */
+button.prev, button.next {
+  cursor: pointer;
+  border-radius: 15%;
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  padding: 16px;
+  margin-top: -22px; /* Ajuste para centrar exactamente */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.493);
+  user-select: none;
+  z-index: 10; /* Asegura que los botones estén por encima de otros elementos */
+}
+
+button.prev {
+  top: 43%;
+  left: 28.3%; /* Ajusta según tus necesidades */
+}
+
+button.next {
+  top: 43%;
+  right: 28.3%; /* Ajusta según tus necesidades */
+}
+
+button.prev:hover, button.next:hover {
+  background-color: rgba(230, 112, 16, 0.514);
+}
+
+.caption {
+  position: relative;
+  bottom: 39px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-align: center;
+  max-width: 42%; /* Ajusta según tus necesidades */
+  z-index: 10; /* Asegura que los botones estén por encima de otros elementos */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 300px;
+  }
+
+  .slide-image {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: 200px; /* Ajusta la altura automáticamente */
+    max-width: 100%; /* Elimina la restricción de ancho máximo */
+    max-height: none; /* Elimina la restricción de altura máxima */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+  }
+
+  button.prev, button.next {
+    top: 50%;
+    margin-top: -22px;
+  }
+
+  .caption {
+    position: relative;
+    margin-top: 0px;
+    font-size: 14px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    max-width: 100%;
+    padding: 8px;
+    bottom: 0px;
+  }
+  button.prev {
+    top: 48%;
+    left: 0px; /* Ajusta según tus necesidades */
+  }
+  
+  button.next {
+    top: 48%;
+    right: 0px; /* Ajusta según tus necesidades */
+  }
+}
+
+    /* Estilos personalizados para el reproductor de audio */
+    audio {
+      width: 100%;
+      max-width: 600px;
+      font-weight: lighter;
+      text-shadow: none;
+      border-radius: 10px; /* Bordes redondeados */
+      overflow: hidden;
+    }
+
+    /* Estilos para navegadores basados en WebKit (Chrome, Safari) */
+    audio::-webkit-media-controls-panel {
+      background-color: #c74204; /* Fondo de los controles */
+    }
+    audio::-webkit-media-controls-play-button{/* Botón de play */
+      color: #000000; 
+    }
+    audio::-webkit-media-controls-pause-button{/* Botón de pausar */
+      color: #000000; 
+    }
+    audio::-webkit-media-controls-mute-button{/* Botón de mutear */
+      color: #000000; 
+    }
+    audio::-webkit-media-controls-volume-slider{/* Barra del volumen */
+      color: #000000; 
+    }
+    audio::-webkit-media-controls-current-time-display{/* Tiempo actual */
+      color: #000000; 
+      text-shadow: none;
+      font-weight: bold;
+    }
+    audio::-webkit-media-controls-time-remaining-display{/* Tiempo total */
+      color: #000000; 
+      text-shadow: none;
+
+    }
+    audio::-webkit-media-controls-timeline { /* Fondo de la barra de progreso */
+      color: #000000; 
+    }
+    /* Estilos adicionales */
+    audio::-webkit-media-controls-timeline {
+      background-color: #c74204; /* Fondo de la barra de progreso */
+    }
+    audio::-webkit-media-controls-volume-slider {
+      background-color: #c74204; /* Fondo del control de volumen */
+    }
+    audio::-moz-volume-slider {
+      background-color: #000000;
+    }
+    audio::-moz-volume-slider-container {
+      background-color: #000000;
+    }
+
+
+/* ZOOM */
+    .zoom-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+      text-align: center; /* Centra la imagen horizontalmente */
+    }
+    .zoom-image {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.25s ease; /* Transición suave para el zoom */
+      touch-action: none; /* Permite manipulación táctil */
+      cursor: grab;
+      transform-origin: center center; /* Establece el origen de la transformación en el centro */
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .zoom-image:active {
+      cursor: grabbing;
+    }
+    .reset-button {
+      display: block;
+      margin: 0 auto; /* Centra el botón horizontalmente */
+      padding: 10px 20px;
+      background-color: #ff0000; /* Gris oscuro */
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
