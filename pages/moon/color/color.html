@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-
-
   <title>Herramienta colores (Moon)</title>
   <link rel="stylesheet" href="../../../../styles.css">
   <style>
@@ -52,6 +50,17 @@
       height: 30px;
       margin: 3px;
     }
+    .reload-button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; /* Ajusta la altura según sea necesario */
+    }
+    .reload-button {
+      width: 90px;
+      height: 90px;
+      cursor: pointer;
+    }
     @media (max-width: 600px) {
       .color-button {
         width: 25vw;  /* Asegura que los botones se mantengan cuadrados en pantallas pequeñas */
@@ -75,9 +84,12 @@
       <button class="color-button blue" onclick="addColor('blue1')"></button>
       <button class="color-button yellow" onclick="addColor('yellow1')"></button>
     </div>
-    <br>
-    <br>
-    <strong>Secuencia ingresada:</strong> <br>
+
+    <div class="reload-button-container">
+      <img src="/pages/shangri_la/symbol/reload.png" alt="Reload" class="reload-button" onclick="resetSequence()">
+    </div>
+
+    <strong>Secuencia ingresada:</strong> 
     <br>
     <br>
     <div class="sequence-display" id="sequenceDisplay">
@@ -88,7 +100,6 @@
   <script src="/script.js"></script>
 
   <script>
-   
     // Array para almacenar la secuencia de colores
     let colorSequence = [];
 
@@ -107,6 +118,12 @@
         colorSquare.className = 'color-square ' + color;
         sequenceDisplay.appendChild(colorSquare);
       });
+    }
+
+    // Función para reiniciar la secuencia
+    function resetSequence() {
+      colorSequence = [];
+      updateSequenceDisplay();
     }
   </script>
 </body>
