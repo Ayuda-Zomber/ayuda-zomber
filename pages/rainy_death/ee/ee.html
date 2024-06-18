@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+
+
+  <title>Easter Egg (Rainy Death)</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="title-with-image">
+    <h1 class="title"><strong>Easter Egg (Rainy Death)</strong></h1>
+    <img src="ee_main.png" width="1280" height="720"class="responsive-image"><br><br><br>
+    <section>
+    <p>
+        <strong>Requisitos:</strong> <br>
+        Activar la electricidad. <br>
+        Poder acceder al PaP. 
+        Tener un arma mejorada. <br>
+        <br><br>
+        El primer paso es recoger la placa que se encuentra junto al PaP.<br>
+        <img src="pieza_take.png" width="600" height="350"class="responsive-image"><br>
+        Después la llevaremos a la sala de los Terminales y la dejaremos en el panel.<br>
+        Luego interactuamos con los 4 terminales. <br>
+        <img src="pieza_poner.png" width="600" height="350"class="responsive-image"><br>
+        Podremos abrir una trampilla en el suelo y obtener así un objeto que nos irá hablando.<br>
+        <img src="objeto.png" width="600" height="350"class="responsive-image"><br>
+        Ahora tendremos que completar 4 desafíos por el mapa.<br>
+        Cada uno encenderá un terminal. <br><br>
+
+        <strong>Azul:</strong><br><br>
+        Para el desafío Azul, deberemos de interactuar con el botón del generador. <br>
+        <img src="blue/1.png" width="600" height="350"class="responsive-image"><br>
+        Un orbe azul aparecerá y tendremos que seguirlo. <br>
+        <img src="blue/2.png" width="600" height="350"class="responsive-image"><br>
+        Se parará en 4 lugares donde tendremos que matar zombis cerca de él para que vuelva a moverse.<br>
+        Estas son todas las ubicaciones donde parará:<br>
+        <div id="slider1" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider1')">&#10094;</button>
+            <div class="slide active">
+                <img src="blue/3.png" width="600" height="350" class="slide-image">
+                <div class="caption">1. En la Calle Principal, fuera de los Terminales.</div>
+            </div>
+            <div class="slide">
+                <img src="blue/4.png" width="600" height="350" class="slide-image">
+                <div class="caption">2. En la refinería de Agua.</div>
+            </div>
+            <div class="slide">
+                <img src="blue/5.png" width="600" height="350" class="slide-image">
+                <div class="caption">3. En la parte alta de la Policía.</div>
+            </div>
+            <div class="slide">
+                <img src="blue/6.png" width="600" height="350" class="slide-image">
+                <div class="caption">4. En las Alcantarillas.</div>
+            </div>
+        <button class="next" onclick="changeSlide(1, 'slider1')">&#10095;</button>
+        </div>
+        Después regresará al generador y tendremos que volver a interactuar con el botón.<br>
+        <img src="blue/8.png" width="600" height="350"class="responsive-image"><br>
+        De esta manera, habremos completado el desafío Azul.<br>
+        <img src="blue/9.png" width="600" height="350"class="responsive-image"><br>
+
+        <strong>Verde:</strong><br><br>
+        Para el desafío Verde, deberemos situarnos en unos círculos verdes que estan en todo el mapa. <br>
+        Estando encima del círculo, 5 símbolos aparecerán alrededor y tendremos que disparar a los 5 sin movernos. <br>
+        <img src="green/2.png" width="600" height="350"class="responsive-image"><br>
+        Estas son todas las ubicaciones de los círculos verdes:<br>
+        <div id="slider2" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider2')">&#10094;</button>
+          <div class="slide active">
+            <img src="green/1.png" width="600" height="350" class="slide-image">
+            <div class="caption">1. En los Puentes.</div>
+          </div>
+        <div class="slide">
+            <img src="green/4.png" width="600" height="350" class="slide-image">
+            <div class="caption">2. En la refinería de Agua.</div>
+        </div>
+        <div class="slide">
+            <img src="green/5.png" width="600" height="350" class="slide-image">
+            <div class="caption">3. En el Callejón</div>
+        </div>
+        <div class="slide">
+            <img src="green/6.png" width="600" height="350" class="slide-image">
+            <div class="caption">4. En la Policía.</div>
+        </div>
+        <div class="slide">
+            <img src="green/7.png" width="600" height="350" class="slide-image">
+            <div class="caption">5. En el Patio.</div>
+        </div>
+        <button class="next" onclick="changeSlide(1, 'slider2')">&#10095;</button>
+        </div>
+        Al completarlos todos, habremos completado el desafío Verde.<br>
+        <img src="green/8.png" width="600" height="350"class="responsive-image"><br>
+
+        <strong>Amarillo:</strong><br><br>
+        Para el desafío Amarillo, deberemos de interactuar con purificadores de agua y defenderlos de los zombis. <br>
+        <img src="yellow/2.png" width="600" height="350"class="responsive-image"><br>
+        Estas son todas las ubicaciones de los purificadores:<br>
+        <div id="slider3" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider3')">&#10094;</button>
+        <div class="slide active">
+            <img src="yellow/1.png" width="600" height="350" class="slide-image">
+            <div class="caption">1. En la refinería de Agua.</div>
+        </div>
+        <div class="slide">
+            <img src="yellow/3.png" width="600" height="350" class="slide-image">
+            <div class="caption">2. En el Garaje.</div>
+        </div>
+        <div class="slide">
+            <img src="yellow/4.png" width="600" height="350" class="slide-image">
+            <div class="caption">3. En la Policía.</div>
+        </div>
+        <button class="next" onclick="changeSlide(1, 'slider3')">&#10095;</button>
+        </div>
+        Al completarlos todos, habremos completado el desafío Amarillo.<br>
+        <img src="yellow/5.png" width="600" height="350"class="responsive-image"><br>
+
+        <strong>Rojo:</strong><br><br>
+        Para el desafío Rojo, deberemos de obtener 3 fusibles. <br><br>
+        El primero se conseguirá al matar a un zombie de fuego. <br>
+        <div id="slider4" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider4')">&#10094;</button>
+        <div class="slide active">
+            <img src="red/1.png" width="600" height="350" class="slide-image">
+        </div>
+        <div class="slide">
+            <img src="red/2.png" width="600" height="350" class="slide-image">
+        </div>
+        <button class="next" onclick="changeSlide(1, 'slider4')">&#10095;</button>
+        </div><br><br>
+        El segundo nos lo dará la planta de las Alcantarillas al dispararle con un arma mejorada. <br>
+        <img src="red/3.png" width="600" height="350"class="responsive-image"><br>
+        Para el tercero, tendremos que comprar el Escudo de Gas y los Tazers Hidráulicos en los contenedores de equipo. <br>
+        <img src="red/5.png" width="600" height="350"class="responsive-image"><br>
+        Después iremos a la Policía y veremos una caja con una marca roja.<br>
+        Primero lo golpeamos con el escudo y luego con los tazers. <br>
+        <div id="slider5" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider5')">&#10094;</button>
+        <div class="slide active">
+            <img src="red/4.png" width="600" height="350" class="slide-image">
+            <div class="caption">Marca roja</div>
+        </div>
+        <div class="slide">
+            <img src="red/6.png" width="600" height="350" class="slide-image">
+            <div class="caption">Golpe de Escudo</div>
+        </div>
+        <div class="slide">
+            <img src="red/7.png" width="600" height="350" class="slide-image">
+            <div class="caption">Carga con los Tazers</div>
+        </div>
+        <button class="next" onclick="changeSlide(1, 'slider5')">&#10095;</button>
+        </div>
+        <br>
+        Cada vez que obtengamos un fusible, lo dejaremos frente a la palanca donde se activa la electricidad. <br>
+        <img src="red/8.png" width="600" height="350"class="responsive-image"><br>
+        Al llevarlos todos, habremos completado el desafío Rojo.<br>
+        <img src="red/9.png" width="600" height="350"class="responsive-image"><br>
+
+
+        Con todos los desafíos completados, volveremos a la sala de los terminales e interactuaremos con ellos. <br>
+        <img src="chip3.png" width="600" height="350"class="responsive-image"><br>
+        Podremos llevarnos el chip de memoria de los terminales y lo deberemos de introducir en los ordenadores a la derecha del PaP. <BR>
+        <img src="chip1.png" width="600" height="350"class="responsive-image"><br>
+        Una vez salga, lo volveremos a llevar a los terminales. <br>
+        <img src="chip2.png" width="600" height="350"class="responsive-image"><br><br>
+        
+
+
+        <strong>Batalla final:</strong><br><br>
+        Para acceder a la batalla final, tendremos que interactuar con la bengala del Patio. <br>
+        <img src="boss/1.png" width="600" height="350"class="responsive-image"><br>
+        Aparecerá el Robot y tendremos que esquivar sus ataques durante un tiempo. <br>
+        <img src="boss/2.png" width="600" height="350"class="responsive-image"><br>
+        Llegará un momento en el que el robot se abrirá y podremos hacerle daño (recomiendo armas mejoradas).<br>
+        <img src="boss/3.png" width="600" height="350"class="responsive-image"><br>
+        Tendremos que tener cuidado con el ataque de la bomba, ya que si no nos escondemos en la esfera violeta, nos matará al acabar la cuenta atrás. <br>
+        <img src="boss/4.png" width="600" height="350"class="responsive-image"><br>
+        Cuando lo matemos por primera vez, la vida se volverá a regenerar, pero esta vez le podremos hacer daño aunque se encuentre de pie.<br>
+        Al acabar con él, habremos completado el Easter Egg de Rainy Death
+
+
+        <img src="ee_final.png" width="600" height="350"class="responsive-image"><br>
+        <br><br>
+    </p>
+    </section>
+   <!-- Más secciones aquí -->
+
+</div>
+<script src="/script.js"></script>
+
+</body>
+</html>

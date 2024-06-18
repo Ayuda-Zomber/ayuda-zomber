@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+
+
+  <title>Rat King (Rainy Death)</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<style>
+    .centered-paragraph {
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto; /* Centra el párrafo horizontalmente */
+        text-align: left; /* Alinea el texto a la izquierda */
+        background-color: rgb(0, 0, 0); /* Cambia este color según tus necesidades */
+        padding: 10px; /* Añade un poco de espacio alrededor del texto */
+        border: 4px solid #ffffff; /* Añade un borde opcional para mejor visualización */
+    }
+    .centered-paragraph span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .centered-paragraph img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    .lightblue {
+        color: #67d2fc; /* Cambia este color según tus necesidades */
+    }
+    .yellow {
+        color: #ffd904; /* Cambia este color según tus necesidades */
+    }
+    .red {
+        color: #fdbf63; /* Cambia este color según tus necesidades */
+    }
+    .lila {
+        color: #9300a7; /* Cambia este color según tus necesidades */
+    }
+    .blue {
+        color: #1371a7; /* Cambia este color según tus necesidades */
+    }
+    </style>
+<body>
+    <div class="title-with-image">
+    <h1 class="title"><strong>Rat King (Rainy Death)</strong></h1>
+    <img src="ratking_main.png" width="1280" height="720"class="responsive-image"><br><br><br>
+    <section>
+    <p>
+        <strong>Requisitos:</strong> <br>
+        Tener el PaP, abierto. <br><br>
+        Tendremos que disparar a 10 pierdras que expulsan humo de color y hacer que desaparezcan.<br>
+        Cada color, representa una AAT(segunda mejora del arma) del PaP. <br>
+        <br><strong>Todas las AAT con su color:</strong><br><br>
+      <p class="centered-paragraph">
+        <span class="lightblue"><strong>Criogénica (Un copo de nieve)</strong></span><img src="crio.png" width="35" height="35"class="responsive-image"><br><br><br><br><br>
+        <span class="yellow"><strong>Radioactiva (Símbolo de radiación)</strong></span><img src="rad.png" width="35" height="35"class="responsive-image"><br><br><br><br><br>
+        <span class="red"><strong>Incendiaria (Una llama)</strong></span><img src="in.png" width="35" height="35"class="responsive-image"><br><br><br><br><br>
+        <span class="lila"><strong>Roñosa (Símbolo violeta)</strong></span><img src="ro.png" width="35" height="35"class="responsive-image"><br><br><br><br><br>
+        <span class="blue"><strong>Conmoción (Un rayo)</strong></span><img src="ray.png" width="35" height="35"class="responsive-image"><br><br><br><br><br>
+      </p>
+
+      <br><strong>Aquí todas las ubicaciones de las piedras:</strong><br><br>
+      <div id="slider1" class="slider">
+        <button class="prev" onclick="changeSlide(-1, 'slider1')">&#10094;</button>
+            <div class="slide active">
+                <img src="1.png" width="600" height="350" class="slide-image">
+                <div class="caption">1. En el Spawn.</div>
+            </div>
+            <div class="slide">
+                <img src="2.png" width="600" height="350" class="slide-image">
+                <div class="caption">2. En la sala del Jügger-Nog.</div>
+            </div>
+            <div class="slide">
+                <img src="3.png" width="600" height="350" class="slide-image">
+                <div class="caption">3. En la entrada de Electricidad.</div>
+            </div>
+            <div class="slide">
+                <img src="4.png" width="600" height="350" class="slide-image">
+                <div class="caption">4. En la salida de Electricidad hacia los puentes.</div>
+            </div>
+            <div class="slide">
+                <img src="5.png" width="600" height="350" class="slide-image">
+                <div class="caption">5. Bajo la refinería de Agua.</div>
+            </div>
+            <div class="slide">
+                <img src="6.png" width="600" height="350" class="slide-image">
+                <div class="caption">6. En la refinería de Agua.</div>
+            </div>
+            <div class="slide">
+                <img src="7.png" width="600" height="350" class="slide-image">
+                <div class="caption">7. En el Garaje.</div>
+            </div>
+            <div class="slide">
+                <img src="8.png" width="600" height="350" class="slide-image">
+                <div class="caption">8. Antes de la entrada de la Policía.</div>
+            </div>
+            <div class="slide">
+                <img src="9.png" width="600" height="350" class="slide-image">
+                <div class="caption">9. Antes de las escaleras de la Policía.</div>
+            </div>
+            <div class="slide">
+                <img src="10.png" width="600" height="350" class="slide-image">
+                <div class="caption">10. Frente a las celdas en la Policía.</div>
+            </div>
+        <button class="next" onclick="changeSlide(1, 'slider1')">&#10095;</button>
+      </div>
+      Cuando todas las piedras desaparezcan, podremos interactuar con la puerta maldita del helipuerto en la Policía. <br>
+      <img src="door.png" width="600" height="350"class="responsive-image"><br>
+      Un orbe comenzará un diálogo y cuando acabe tendremos que pasar 3 desafíos:<br><br>
+      <strong>Tiempo:</strong><br><br>
+      Tendremos que pasar 5 rondas en la zona alta de la Policía y luego interactuar con el orbe.<br>
+      <img src="time.png" width="600" height="350"class="responsive-image"><br><br>
+      <strong>Money:</strong><br><br>
+      Tendremos que ingresar 5.000 puntos en el orbe de Electricidad.<br>
+      <img src="money.png" width="600" height="350"class="responsive-image"><br><br>
+      <strong>Poder:</strong><br><br>
+      Tendremos que entregar armas en el orbe del Spawn. Si las armas estan mejoradas, entregaremos menos cantidad.<br>
+      <img src="power.png" width="600" height="350"class="responsive-image"><br><br>
+      Al completar los desafíos, volveremos a la puerta y tras un díalogo con el extraño, podremos entrar al portal. <br>
+      <img src="door2.png" width="600" height="350"class="responsive-image"><br>
+      Tendremos que matar zombis debajo de la calavera que se irá moviendo para regresar. <br>
+      <img src="skull.png" width="600" height="350"class="responsive-image"><br>
+      Al volver podremos obtener la pistola Ratking de la caja. <br>
+      <img src="ratking_final.png" width="600" height="350"class="responsive-image"><br>
+      También se puede mejorar en el PaP.<br>
+      <img src="pap.png" width="600" height="350"class="responsive-image"><br>
+    </p>
+  </section>
+   <!-- Más secciones aquí -->
+
+</div>
+<script src="/script.js"></script>
+
+</body>
+</html>
