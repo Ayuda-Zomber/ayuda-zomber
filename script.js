@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function applyTransform() {
       zoomImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-      // Limitar la escala mínima a 1
+      // Limitar la escala min a 1
       if (scale < 1) {
         scale = 1;
       }
