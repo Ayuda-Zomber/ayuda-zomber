@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <title>Descargar juego o DLCs</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    h2.title {
+      color: rgb(255, 255, 255);
+      font-weight: normal; /* Asegurarse de que no esté en negrita */
+      border: 2px solid #000;
+      padding: 10px 30px 10px 10px; /* Asegurarse de que haya espacio para la flecha */
+      cursor: pointer;
+      position: sticky; /* Cambia la posición a sticky */
+      top: 0; /* Fija la cabecera en la parte superior del contenedor */
+      z-index: 1; /* Asegúrate de que el título esté por encima del contenido */
+      background-color: #be3702; /* Añade color de fondo para evitar superposiciones de texto */
+      box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+
+  }
+  
+  h2.title::after {
+      content: '▼'; /* Flecha hacia abajo por defecto */
+      position: absolute;
+      right: 10px; /* Posiciona la flecha a la derecha */
+      top: 50%;
+      transform: translateY(-50%); /* Centra verticalmente la flecha */
+      transition: transform 0.3s ease;
+  }
+  
+  h2.title.active::after {
+      transform: translateY(-50%) rotate(-180deg); /* Flecha hacia arriba cuando está desplegado */
+  }
+  
+  section {
+      display: none;
+  }
+  
+  section.active {
+      display: block;
+  }
+  
+  section p {
+      background-color: #00000098; /* Color de fondo para el texto normal */
+      padding: 10px;
+      border-radius: 5px;
+  }
+  </style>
+</head>
+<body>
+  <div class="title-with-image">
+    <h1 class="title"><strong>Descargar juego o DLCs</strong></h1>
+
+    <h2 class="title">Necesito el juego completo</h2>
+    <section>
+      <p>
+        <strong>¿Qué obtendremos?<br></strong><br><br>
+        Si seguimos los siguientes pasos, obtendremos el Black Ops III con todos los DLC's y el Zombies Chronicles. 
+        También tendremos el BOIII.exe, un launcher que nos permite jugar con amigos que también lo tengan.<br>
+    </p>   
+
+    <p>
+        <strong>Requisitos:<br></strong><br><br>
+        Si no lo tenemos ya, necesitaremos un programa para descargar torrents, recomiendo <strong><a href="https://www.fosshub.com/qBittorrent.html">Qbitorrent</a></strong>. <br>
+        <strong><a href="https://www.winrar.es/descargas">Winrar</a></strong> también será necesario.<br>
+        <strong>Sólo si queremos jugar con amigos, tendremos que descargar <a href="https://www.radmin-vpn.com/es/">Radmin VPN</a></strong>.<br>
+      </p>
+
+      <p>
+        <strong>Descargar e instalar el juego<br></strong><br><br>
+        Descargaremos el <a href="https://mega.nz/file/PV02WL7K#anamYWfWAuY_BxS2baV9Iq8ydvfjm7_475_ihg1BxSQ">RAR</a></strong> que contiene el archivo del juego.<br>
+        Daremos click derecho en el .rar y extraeremos los archivos en una carpeta temporal. <br>
+        <img src="extract.png" width="1280" height="720"class="responsive-image"><br>
+        Después, abriremos el "Call_of_Duty_Black_Ops_III_v100.0.0.0.0.torrent", marcaremos la ruta donde deseamos descargar el instalador y luego le daremos en Aceptar. <br>
+        <img src="torrent.png" width="1280" height="720"class="responsive-image"><br>
+        Una vez se descargue por completo, entraremos en la carpeta en la que guardamos los archivos.<br>
+        Ahí, seleccionamos todos los .rar (59 archivos), le damos click derecho y "Extraer aquí".<br>
+        El resultado será una carpeta con el archivo Call of Duty Black Ops III.iso<br>
+        <img src="iso.png" width="1280" height="720"class="responsive-image"><br>
+        Entraremos en el archivo y luego en el setup.exe para proceder con la instalación del juego.<br>
+        <img src="setup.png" width="1280" height="720"class="responsive-image"><br>
+        Tendremos que seguir los pasos de la instalación, indicar la ruta donde queremos guardar el juego y completarla.<br>
+        <img src="completo.png" width="1280" height="720"class="responsive-image"><br>
+      </p>
+
+      <p>
+        <strong>Jugar Online<br></strong><br><br>
+        Para jugar online, tendremos que escargar los archivos del launcher <a href="https://mega.nz/file/PV02WL7K#anamYWfWAuY_BxS2baV9Iq8ydvfjm7_475_ihg1BxSQ">boiii.exe</a></strong>.<br>
+        Iremos a la carpeta del juego y borraremos todos los archivos que no son carpetas. <br>
+        <img src="carpetas.png" width="1280" height="720"class="responsive-image"><br>
+        Después, extraeremos los archivos dentro del Update 42.rar que acabamos de descargar dentro de la carpeta del juego.<br>
+        <img src="update.png" width="1280" height="720"class="responsive-image"><br>
+        El juego lo iniciamos en el boiii.exe, podemos crear un acceso directo y enviarlo al escritorio. <br>
+        <img src="juego.png" width="1280" height="720"class="responsive-image"><br>
+      </p>
+    </section>
+
+    <h2 class="title">Tengo el juego comprado, me faltan DLCs</h2>
+    <section>
+      <p>
+        <strong>¿Qué obtendremos?<br></strong><br><br>
+        Si seguimos los siguientes pasos, obtendremos todos los DLCs del juego. (Solo serán jugables desde el BOIII.exe) <br>
+    </p>   
+
+    <p>
+        <strong>Requisitos:<br></strong><br><br>
+        Si no lo tenemos ya, necesitaremos un programa para descargar torrents, recomiendo <strong><a href="https://www.fosshub.com/qBittorrent.html">Qbitorrent</a></strong>. <br>
+        Descargar el <strong><a href="https://forum.ezz.lol/assets/uploads/files/1687274331519-t7_dlc.torrent">torrent con los mapas</a></strong>. <br>
+        Descargar el <strong><a href="https://www.mediafire.com/file/3jxsn6smawlnnsu/Spanish.zip/file">archivo</a></strong> de traducción a Español (necesario si tenemos el juego en español).<br>
+        Descargar el <a href="https://mega.nz/file/PV02WL7K#anamYWfWAuY_BxS2baV9Iq8ydvfjm7_475_ihg1BxSQ">boiii.exe</a></strong>.<br>
+      </p>
+
+      <p>
+        <strong>Instalar y jugar los DLCs<br></strong>
+        Ubicadamos la carpeta del juego en Steam. Entramos a la Biblioteca --> en la página del juego --> Administar --> Propiedades --> Archivos Instalados --> Explorar... <br>
+        Suele estar en (C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops III) <br>
+        <img src="ubi.png" width="1280" height="720"class="responsive-image"><br>
+        El primer paso será descargar el torrent en una carpeta temporal. <br>
+        <img src="dlc1.png" width="1280" height="720"class="responsive-image"><br>
+        Cuando se complete la descarga, arrastraremos los archivos a la carpeta del juego y los remplazaremos.<br>
+        <img src="dlc2.png" width="1280" height="720"class="responsive-image"><br>
+        Haremos lo mismo con el archivo de traducción al español. <br>
+        <img src="dlc3.png"width="1280" height="720"class="responsive-image"><br>
+        El siguiente paso es pegar el boiii.exe en la carpeta del juego.<br>
+        Si queremos jugar sin el launcher, ejecutamos el Black Ops III.exe y si queremos jugar con el launcher ejecutamos el boiii.exe.<br>
+        <img src="juego.png"width="1280" height="720"class="responsive-image"><br>
+        Por último, tendremos que entrar en Steam --> Biblioteca --> Entramos en Black Ops III --> Propiedades --> DLC --> y asegurarnos de tener descargado el "Multiplayer DLC Trial Pack".<br>
+        <img src="trial.png"width="1280" height="720"class="responsive-image"><br>
+      </p>
+    </section>
+
+    <h2 class="title">Tengo el juego completo comprado, pero mis amigos juegan en boiii.exe</h2>
+    <section>
+      <p>
+        <strong>Requisitos:<br></strong><br><br>
+        Descargar el <strong><a href="https://www.fosshub.com/qBittorrent.html">BOIII.exe</a></strong>. <br>
+      </p>
+      <p>
+
+        <strong>Instalar el Launcher<br></strong>
+        Ubicadamos la carpeta del juego en Steam. Entramos a la Biblioteca --> en la página del juego --> Administar --> Propiedades --> Archivos Instalados --> Explorar... <br>
+        Suele estar en (C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops III) <br>
+        <img src="ubi.png"width="1280" height="720"class="responsive-image"><br>
+        El siguiente paso es pegar el boiii.exe en la carpeta del juego.<br>
+        Si queremos jugar sin el launcher, ejecutamos el Black Ops III.exe y si queremos jugar con el launcher ejecutamos el boiii.exe.<br>
+        <img src="juego.png"width="1280" height="720"class="responsive-image"><br>
+        Por último, tendremos que entrar en Steam --> Biblioteca --> Entramos en Black Ops III --> Propiedades --> DLC --> y asegurarnos de tener descargado el "Multiplayer DLC Trial Pack".<br>
+        <img src="trial.png"width="1280" height="720"class="responsive-image"><br>
+      </p>
+    </section>
+
+    <h2 class="title">Jugar con amigos partidas privadas</h2>
+    <section>
+      <p>
+        <strong>Requisitos<br></strong>
+        Para crear una partida privada necesitaremos descargar el <a href="https://www.radmin-vpn.com/es/">Radmin VPN</a></strong>.<br>
+      </p>
+
+      <p>
+        <strong>Jugar privadas con amigos<br></strong><br><br>
+       
+        Tendremos dos opciones dependiendo de si creamos la partida o la crea un amigo.<br><br>
+        <strong>Opción 1- Somos el Host de la partida</strong>:<br><br>
+        Iniciamos el Radmin, seleccionamos Red --> Crear Red --> Registramos un nombre e inventamos una contraseña. Tendremos que pasárle estos datos a nuestros amigos.<br>
+        <img src="host.png" width="300" height="400"class="responsive-image"><br>
+        Con el Radmin encendido, creamos una partida privada y entramos(nuestros amigos se unirán cuando nosotros ya estemos en la ronda 1).<br><br>
+        <strong>Opción 2- Queremos unirnos a la partida</strong>:<br><br>
+        Iniciamos el Radmin, seleccionamos Red --> Unirse a Red --> Ingresamos el nombre y contraseña que nos dará el Host.<br>
+        <img src="nohost.png" width="300" height="400"class="responsive-image"><br>
+        Con el Radmin encendido, copiamos la dirección IP del Host de nuestra red y entramos en el juego.<br>
+        <img src="ip1.png" width="300" height="400"class="responsive-image"><br>
+        Una vez dentro del menú, presinaremos una de estas teclas para abrir la consola del juego (a la izquierda del 1 o a la derecha de la P). <br>
+        <img src="teclado.png" width="1280" height="720"class="responsive-image"><br>
+        En la consola escribiremos lo siguiente y le daremos al enter. Cambiamos IP por la dirección IP que copiamos del Host: <strong>connect IP</strong><br>
+        <img src="ip2.png" width="1280" height="720"class="responsive-image"><br>
+        Cuando todos los jugadores estemos espectando al host dentro de la partida, le diremos que pase a la ronda dos y podremos unirnos. <br>
+      </p>
+    </section>
+    <strong>IMPORTANTE: Antes de reportar un error, asegúrate de tener antivirus, Windows Defender o cualquier otro programa similar desactivados.</strong><br><br>
+    ¿Para descargar customs?. En <strong><a href="/workshop/workshop.html">esta sección</a></strong>, tendrás una guía de cómo descargar cualquier mapa e instalarlo. <br>
+  </div>
+  <script src="/script.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+      const titles = document.querySelectorAll('h2.title');
+
+      titles.forEach(function(title) {
+        title.addEventListener('click', function() {
+          // Alternar la clase active para el título
+          title.classList.toggle('active');
+
+          // Obtener la siguiente sección después del h2
+          const section = title.nextElementSibling;
+
+          // Alternar la clase active para mostrar/ocultar la sección
+          section.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
