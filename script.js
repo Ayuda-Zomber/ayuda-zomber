@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log(`Entrada al script`);
+  console.log('Entrada al script');
 
   const buttons = document.querySelectorAll('.option-button');
 
@@ -26,33 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
     slider10: 0
   };
 
-  function showSlides(sliderId) {
+  window.showSlides = function showSlides(sliderId) {
     let slides = document.querySelectorAll(`#${sliderId} .slide`);
     slides.forEach((slide, index) => {
-      slide.style.display = 'none';
+      slide.style.display = 'none'; // Oculta todas las diapositivas
       if (index === slideIndex[sliderId]) {
-        slide.style.display = 'block';
+        slide.style.display = 'block'; // Muestra solo la diapositiva actual
       }
     });
-  }
+  };
 
-  function changeSlide(n, sliderId) {
+  window.changeSlide = function changeSlide(n, sliderId) {
     let slides = document.querySelectorAll(`#${sliderId} .slide`);
+    // Calcula el nuevo índice de la diapositiva, asegurándose de que sea un valor válido
     slideIndex[sliderId] = (slideIndex[sliderId] + n + slides.length) % slides.length;
-    showSlides(sliderId);
-  }
+    showSlides(sliderId); // Muestra la nueva diapositiva
+  };
 
-  // Initialize both sliders
-  showSlides('slider1');
-  showSlides('slider2');
-  showSlides('slider3');
-  showSlides('slider4');
-  showSlides('slider5');
-  showSlides('slider6');
-  showSlides('slider7');
-  showSlides('slider8');
-  showSlides('slider9');
-  showSlides('slider10');
+  // Inicializa todas las diapositivas
+  for (let i = 1; i <= 10; i++) {
+    showSlides(`slider${i}`);
+  }
 
   // ICONOS
   function loadIcons() {
@@ -85,8 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   loadIcons();
 
-  // logo
-  // Crea un nuevo elemento link para el favicon
+  // Favicon
   var link = document.createElement('link');
   link.rel = 'icon';
   link.type = 'image/png'; // Cambiado a image/png
